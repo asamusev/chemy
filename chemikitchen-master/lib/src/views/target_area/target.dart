@@ -1,3 +1,4 @@
+import 'package:chemikitchen/src/models/complex_element.dart';
 import 'package:chemikitchen/src/models/single_element.dart';
 import 'package:chemikitchen/src/views/elements/complex.dart';
 import 'package:chemikitchen/src/views/elements/single.dart';
@@ -33,9 +34,8 @@ class TargetArea extends StatelessWidget {
                 if (elements[index] is SingleChemiElement){
                   return SingleElement(element: elements[index],);
                 }
-                return ComplexElement(element: elements[index],);        
-              }, 
-            ),
+                return ComplexElement(element: elements[index],);  
+              }),
           ),
           Spacer(),
         ],

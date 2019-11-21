@@ -3,6 +3,7 @@ import 'package:chemikitchen/src/models/complex_element.dart';
 import 'package:flutter/material.dart';
 
 class SetComplexElements{
+
   static ComplexChemiElement water() => ComplexChemiElement(
     name: "Water", 
     count: 1, 
@@ -11,10 +12,8 @@ class SetComplexElements{
     description: "about wather",
     compaund: [SetSingleElements.hydrogen(count: 2), SetSingleElements.oxygen()]
     );
-}
 
-class SetAcid{
-  static Acid azoticAcid() => Acid(
+  static ComplexChemiElement azoticAcid() => ComplexChemiElement(
     name: "Azotic Acid", 
     count: 1, 
     short: "HNO3", 
@@ -22,7 +21,7 @@ class SetAcid{
     description: "about azoticAcid",
     compaund: [SetSingleElements.hydrogen(count: 1),SetSingleElements.natrium(count: 1), SetSingleElements.oxygen(count: 3)]
     );
-    static Acid carbonAcid() => Acid(
+    static ComplexChemiElement carbonAcid() => ComplexChemiElement(
     name: "Carbon Acid", 
     count: 1, 
     short: "H2CO3", 
@@ -30,10 +29,8 @@ class SetAcid{
     description: "about azoticAcid",
     compaund: [SetSingleElements.hydrogen(count: 1),SetSingleElements.carbon(count: 1), SetSingleElements.oxygen(count: 3)]
     );
-}
 
-class SetOxide{
-  static Oxide lithiumOxide() => Oxide(
+  static ComplexChemiElement lithiumOxide() => ComplexChemiElement(
     name: "Lithium Oxide", 
     count: 1, 
     short: "Li2O", 
@@ -42,7 +39,7 @@ class SetOxide{
     compaund: [SetSingleElements.lithium(count: 2), SetSingleElements.oxygen()]
   );
 
-  static Oxide natriumOxide() => Oxide(
+  static ComplexChemiElement natriumOxide() => ComplexChemiElement(
     name: "Natrium Oxide", 
     count: 1, 
     short: "Na2O", 
@@ -54,16 +51,7 @@ class SetOxide{
 }
 
 
+
     List<ComplexChemiElement> allComplexElements = [
       SetComplexElements.water(),
-    ];
-
-    List<Oxide> allOxide = [
-      SetOxide.lithiumOxide(),
-      SetOxide.natriumOxide(),
-    ];
-
-    List<Acid> allAcid = [
-    SetAcid.azoticAcid(),
-    SetAcid.carbonAcid(),
     ];

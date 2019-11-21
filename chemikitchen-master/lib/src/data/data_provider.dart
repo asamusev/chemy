@@ -124,9 +124,7 @@ class ChemiData with ChangeNotifier {
           if (equalsListElements(e.compaund, [lastElement, element])){
      
             deletedElement.add(element.uuid);
-            print(element.uuid);
             deletedElement.add(lastElement.uuid);
-            print(lastElement.uuid);
             _complexElement.add(SetComplexElements.water());
           } else {
           }
